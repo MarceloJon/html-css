@@ -13,13 +13,33 @@
          table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
          }
 
          td, th{
             border: 1px solid black;
-            text-align: center;
             padding: 10px;
-            
+         }
+
+         thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(91, 91, 91);
+            border: 1px solid black;
+         }
+
+         tbody > tr:nth-child(even){
+            background-color: lightgray;
+         }
+
+         tbody > tr:nth-child(odd){
+            background-color: rgb(146, 230, 227);
+         }
+
+         caption{
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
          }
 
          thead, tfoot{
@@ -37,6 +57,7 @@
         ANATOMIA PARA TABELAS GRANDES
 
         TABLE
+            CAPTION (Legenda)
             THEAD
                 TR, TD, TH
             TBODY
@@ -46,14 +67,111 @@
     -->
     
     <table>
+        <caption><strong>POPULAÇÃO DAS UNIDADES FEDERATIVAS</strong></caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
         <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>RJ</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Capítulo </td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>ESTADIO</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>JOAO</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>FERNANDO</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>LUCAS</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>MARCELO</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
             <tr>
                 <td>São Paulo</td>
                 <td>45 919 049</td>
@@ -70,10 +188,31 @@
         
         <tfoot>
             <tr>
-                <td>Total de Habitantes</td>
-                <td>0000</td>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>0000</strong></td>
             </tr>
         </tfoot>
+        
     </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iste velit facilis quod at sapiente magni, earum odio numquam, doloremque veniam repellendus fugit vitae consequatur accusamus illo porro. Sunt, excepturi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores hic odit ipsa perspiciatis architecto non, temporibus natus, exercitationem soluta consequuntur ea ab ratione et, itaque qui. Aspernatur earum quos ducimus.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iste velit facilis quod at sapiente magni, earum odio numquam, doloremque veniam repellendus fugit vitae consequatur accusamus illo porro. Sunt, excepturi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores hic odit ipsa perspiciatis architecto non, temporibus natus, exercitationem soluta consequuntur ea ab ratione et, itaque qui. Aspernatur earum quos ducimus.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iste velit facilis quod at sapiente magni, earum odio numquam, doloremque veniam repellendus fugit vitae consequatur accusamus illo porro. Sunt, excepturi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores hic odit ipsa perspiciatis architecto non, temporibus natus, exercitationem soluta consequuntur ea ab ratione et, itaque qui. Aspernatur earum quos ducimus.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iste velit facilis quod at sapiente magni, earum odio numquam, doloremque veniam repellendus fugit vitae consequatur accusamus illo porro. Sunt, excepturi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores hic odit ipsa perspiciatis architecto non, temporibus natus, exercitationem soluta consequuntur ea ab ratione et, itaque qui. Aspernatur earum quos ducimus.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iste velit facilis quod at sapiente magni, earum odio numquam, doloremque veniam repellendus fugit vitae consequatur accusamus illo porro. Sunt, excepturi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores hic odit ipsa perspiciatis architecto non, temporibus natus, exercitationem soluta consequuntur ea ab ratione et, itaque qui. Aspernatur earum quos ducimus.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iste velit facilis quod at sapiente magni, earum odio numquam, doloremque veniam repellendus fugit vitae consequatur accusamus illo porro. Sunt, excepturi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores hic odit ipsa perspiciatis architecto non, temporibus natus, exercitationem soluta consequuntur ea ab ratione et, itaque qui. Aspernatur earum quos ducimus.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iste velit facilis quod at sapiente magni, earum odio numquam, doloremque veniam repellendus fugit vitae consequatur accusamus illo porro. Sunt, excepturi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores hic odit ipsa perspiciatis architecto non, temporibus natus, exercitationem soluta consequuntur ea ab ratione et, itaque qui. Aspernatur earum quos ducimus.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iste velit facilis quod at sapiente magni, earum odio numquam, doloremque veniam repellendus fugit vitae consequatur accusamus illo porro. Sunt, excepturi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores hic odit ipsa perspiciatis architecto non, temporibus natus, exercitationem soluta consequuntur ea ab ratione et, itaque qui. Aspernatur earum quos ducimus.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iste velit facilis quod at sapiente magni, earum odio numquam, doloremque veniam repellendus fugit vitae consequatur accusamus illo porro. Sunt, excepturi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores hic odit ipsa perspiciatis architecto non, temporibus natus, exercitationem soluta consequuntur ea ab ratione et, itaque qui. Aspernatur earum quos ducimus.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iste velit facilis quod at sapiente magni, earum odio numquam, doloremque veniam repellendus fugit vitae consequatur accusamus illo porro. Sunt, excepturi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores hic odit ipsa perspiciatis architecto non, temporibus natus, exercitationem soluta consequuntur ea ab ratione et, itaque qui. Aspernatur earum quos ducimus.</p>
 </body>
 </html>
