@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+
+    <!--
+
+        Name -> Mais util para HTML e PHP
+        Id -> Mais util para o JS
+
+        Metodos para envio de Formuário:
+
+                        METHOD
+
+        GET     -> Dados que não forem sensíveis (busca no google)
+      (Padrão)  -> Envio de dados até 3k bytes (3k letras)
+                -> Não pode ser para envio de fotos
+
+        POST -> Dados sensíveis (mas se for cartão de senha coisa mais séria, trabalhar com https)
+             -> Dados mais de 3k bytes
+             -> Envio de arquivos
+
+    -->
+
+    <form action="cadastro.php" autocomplete="off" method="POST">
+        <p>
+            <label for="inome">Nome:</label>
+
+            <input type="text" name="nome" id="inome">
+        </p>
+
+        <p>
+            <label for="isobrenome">Sobrenome:</label> 
+            
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+
+</body>
+</html>
